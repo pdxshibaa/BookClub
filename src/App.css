@@ -1,0 +1,211 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4a148c;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  background: #663399;
+  color: white;
+}
+
+/* Search Bar */
+.search-section {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  padding: 0.75rem;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-btn {
+  padding: 0.75rem 1.5rem;
+  background: #663399;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Filter Input (for local lists) */
+.filter-input {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Book Grid */
+.book-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.book-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: row;
+}
+
+.book-card:nth-child(even) {
+  background: #f7f7f7;
+}
+
+.book-card:hover {
+  transform: translateX(5px);
+}
+
+.book-cover {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  background: #f0f0f0;
+  flex-shrink: 0;
+}
+
+.book-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.book-date {
+  font-size: 0.85rem;
+  color: #4a148c;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.book-date.highlight {
+  color: #4a148c;
+  background-color: #f3e5f5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.book-meta {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 0.25rem;
+}
+
+.book-link {
+  display: block;
+  margin-top: 0.5rem;
+  color: #663399;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.book-link:hover {
+  text-decoration: underline;
+}
+
+.book-comments {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  background: #f9f9f9;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btn-suggest { background: #e67e22; color: white; }
+.btn-read { background: #27ae60; color: white; }
+.btn-remove { background: #e74c3c; color: white; }
+
+.empty-state {
+  text-align: center;
+  grid-column: 1 / -1;
+  color: #888;
+  padding: 3rem;
+}
