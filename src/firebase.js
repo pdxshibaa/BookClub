@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 // TODO: Replace the following with your app's Firebase project configuration
 // You can find this in the Firebase Console -> Project Settings -> General -> "Your apps"
 const firebaseConfig = {
-  apiKey: "AIzaSyAbIWMqgTOnkQ0jE02f7BpDm0JkhZYpjQk",
-  authDomain: "bookclubbackend.firebaseapp.com",
-  projectId: "bookclubbackend",
-  storageBucket: "bookclubbackend.firebasestorage.app",
-  messagingSenderId: "219050497346",
-  appId: "1:219050497346:web:85e8c71bf341ca3c8164db",
-  measurementId: "G-ZGKWVBZN6G"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
